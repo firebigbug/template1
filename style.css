@@ -20,13 +20,13 @@
     padding: 0px;
     
 }
-.titlerazorback img {
-    position: absolute;
-    top: 50px;
-    left: 350px;
-    width: 400px;
-    margin: 0px;
-    padding: 0px;
+.razorbackcomp img {
+    position: fixed; /* Use fixed position to center relative to the viewport */
+    top: 10%; /* Place the top of the image 50% down from the top of the viewport */
+    left: 50%; /* Place the left edge of the image 50% across the viewport */
+    transform: translate(-50%, -50%); /* Translate the image back by half of its own width and height */
+    max-width: 55%; /* Ensure the image does not exceed the viewport width */
+    max-height: 55%; /* Ensure the image does not exceed the viewport height */
     cursor: default;
 }
 .titlecomp img {
